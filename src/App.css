@@ -1,9 +1,51 @@
-.App {
-  text-align: center;
-  color: beige;
+body {
   background-color: black;
+  background-image: url("img/espacio-riki.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-button {
-  background-color: rgb(77, 236, 77);
+.search {
+  margin-left: 57rem;
+}
+.search button {
+  background-color: yellow;
+  margin-left: 15px;
+  margin: 10px;
+}
+.search input {
+  width: 20rem;
+}
+.button {
+  background-color: rgb(236, 13, 42);
+  margin-left: 13.5rem;
+  position: absolute;
+}
+h2 {
+  text-align: center;
+}
+.name {
+  position: absolute;
+  bottom: 170px;
+  left: 12px;
+  background-color: yellow;
+  font-size: 15px;
+}
+.card {
+  border: 3px solid blue;
+  width: 15em;
+  background-color: cadetblue;
+  margin: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+img {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
 }
