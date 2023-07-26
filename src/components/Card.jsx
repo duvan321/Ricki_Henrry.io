@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Card({ id, name, status, species, gender, origin, image, onClose }) {
   return (
     <div className="card">
@@ -10,7 +12,9 @@ function Card({ id, name, status, species, gender, origin, image, onClose }) {
         X
       </button>
       <img src={image} alt="" />
-      <h2 className="name">{name} </h2>
+      <Link to={`/detail/${id}`}>
+        <h2 className="name">{name} </h2>
+      </Link>
       <h2>{status} </h2>
       <h2>{species} </h2>
       <h2>{gender} </h2>

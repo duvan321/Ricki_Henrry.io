@@ -4,6 +4,9 @@ import Cards from "./components/Cards.jsx";
 import Nav from "./components/Nav";
 import { useState } from "react";
 import axios from "axios";
+import { Routes, Route } from "react-router-dom";
+import About from "./components/About";
+import Detail from "./components/Detail";
 const example = {
   id: 1,
   name: "Rick Sanchez",
@@ -42,7 +45,14 @@ function App() {
   return (
     <div className="App">
       <Nav onSearch={onSearch} />
-      <Cards characters={characters} onClose={onClose} />
+      <Routes>
+        <Route
+          path="/home"
+          element={<Cards characters={characters} onClose={onClose} />}
+        ></Route>
+        <Route path="/abaout" element={<About />}></Route>
+        <Route path="/detail/:id" element={<Detail />} />
+      </Routes>
     </div>
   );
 }
