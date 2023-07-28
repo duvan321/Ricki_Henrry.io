@@ -110,12 +110,54 @@ img {
 .Aboult {
   margin-top: 0%;
   background-color: red;
-  height: 37.1em;
+  height: 37.5em;
 }
 .Aboul {
-  padding-top: 10%;
   text-align: center;
-  color: beige;
   margin: 0;
   font-size: 80px;
+}
+.aboulH1 {
+  padding-top: 10%;
+}
+.Aboul {
+  color: beige;
+}
+.Aboul :hover {
+  color: gold;
+}
+
+.formImage {
+  margin-top: 15px;
+  border-radius: 50%;
+  width: 200px;
+}
+.cardForm {
+  text-align: center;
+  margin-top: 5em;
+  margin-left: 33em;
+  width: 20em;
+  background-color: rgb(129, 137, 138);
+
+  margin-bottom: 10px;
+}
+.cardForm label {
+  font-size: 1.5rem;
+}
+.cardForm p {
+  color: red;
+}
+.cardForm button {
+  background-color: chartreuse;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.cardForm button :hover {
+  background-color: forestgreen;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  padding: 2px;
 }
