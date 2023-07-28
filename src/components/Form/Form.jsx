@@ -1,5 +1,7 @@
 import { useState } from "react";
+
 import Validation from "../Validations/Validation";
+import img from "./Rick_y_Morty.jpg";
 const Form = ({ login }) => {
   const [userData, setUserData] = useState({
     email: "",
@@ -22,11 +24,7 @@ const Form = ({ login }) => {
   };
   return (
     <div className="cardForm">
-      <img
-        className="formImage"
-        src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-        alt=""
-      />
+      <img className="formImage" src={img} alt="" />
       <form onSubmit={handlerSubmit}>
         <label>Email:</label>
         <br />
